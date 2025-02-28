@@ -124,6 +124,17 @@ const skills = [
     name: "Twilio",
     image: "https://www.vectorlogo.zone/logos/twilio/twilio-icon.svg",
   },
+  {
+    id: 22,
+    name: "Vercel",
+    image: vercel.src,
+  },
+  {
+    id: 23,
+    name: "Cloudflare",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg",
+  },
 ];
 
 export { skills };
