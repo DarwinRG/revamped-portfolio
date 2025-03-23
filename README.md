@@ -1,5 +1,7 @@
 # Revamped Portfolio
 
+![Portfolio Preview](./assets/screenshot.jpeg)
+
 This is a modern and responsive portfolio website built using Next.js, Tailwind CSS, and TypeScript. It showcases personal projects, skills, certifications, and contact information in an interactive and visually appealing way.
 
 ## Features
