@@ -22,3 +22,12 @@ This is a modern and responsive portfolio website built using Next.js, Tailwind 
 - **Framer Motion**: For animations and transitions.
 - **React Hot Toast**: For notifications.
 - **Resend API**: For handling email functionality.
+
+
+## Live Website
+
+The portfolio is deployed and can be accessed at [darwinrg.me](https://darwinrg.me). Feel free to visit to see all the features in action.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
