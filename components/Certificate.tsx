@@ -17,6 +17,16 @@ const certificateArray: CertificateProps[] = [
     title: "Data Analytics Essentials",
     url: "https://www.credly.com/badges/2808ea78-9836-4190-b130-42577c92a0e7",
   },
+  {
+    provider: "Cisco",
+    title: "Networking Essentials",
+    url: "/Networking_Essentials.pdf",
+  },
+  {
+    provider: "Cisco",
+    title: "JavaScript Essentials 1",
+    url: "https://www.credly.com/badges/c43a1822-c81e-4aff-b2b6-c0555986f168",
+  },
 ];
 
 function Certificate() {

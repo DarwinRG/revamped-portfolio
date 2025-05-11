@@ -64,6 +64,13 @@ function ContactForm() {
           message: formData.message,
         }),
       });
+
+      if (!res.ok) {
+        const errorText = res.statusText || "Failed to send message";
+        errorToast(errorText);
+        return;
+      }
+
       const data = await res.json();
       if (data.id) successToast("Message is sent successfully");
     } catch (error) {
