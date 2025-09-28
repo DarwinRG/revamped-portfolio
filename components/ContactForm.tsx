@@ -56,25 +56,39 @@ function ContactForm() {
     try {
       setLoading(true);
 
+      console.log("Sending request to /api/contact");
       const res = await fetch("/api/contact", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           fname: formData.name,
           email: formData.email,
           message: formData.message,
         }),
       });
-
-      if (!res.ok) {
-        const errorText = res.statusText || "Failed to send message";
-        errorToast(errorText);
-        return;
-      }
+      
+      console.log("Response status:", res.status);
 
       const data = await res.json();
-      if (data.id) successToast("Message is sent successfully");
+      if (!res.ok) {
+        const msg = data?.error || res.statusText || "Failed to send message";
+        errorToast(msg);
+        return;
+      }
+      if (data?.id) {
+        successToast("Message sent successfully");
+      } else {
+        errorToast("Something went wrong. Please try again later.");
+      }
     } catch (error) {
-      if (error instanceof Error) errorToast(error.message);
+      console.error("Fetch error:", error);
+      if (error instanceof Error) {
+        errorToast(`Network error: ${error.message}`);
+      } else {
+        errorToast("Network error: Please check your connection");
+      }
     } finally {
       setLoading(false);
     }

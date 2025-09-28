@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import dp from "@/assets/profile-white.jpg";
+import dp from "@/assets/profile-bg.png";
 
 import { MovingBorderContainer } from "./ui/moving-border";
 
@@ -24,17 +24,16 @@ function Bio() {
           Darwin R. Guillermo
         </h1>
         <p className="text-lg text-gray-100 text-justify">
-          I am a third-year Bachelor of Science in Information Technology (BSIT)
-          student eager to apply the knowledge and skills I have gained in the
-          classroom to real world experiences through an internship. My goal is
-          to learn from professionals, enhance my technical abilities, and
-          contribute to meaningful projects. I am passionate about technology,
-          problem-solving, and continuous learning, and I am excited to grow
-          both personally and professionally in a hands-on work environment.
+          I am a Cum Laude graduate with a Bachelor of Science in Information Technology (BSIT)
+          from Panpacific University, with hands-on experience in web development, IT support, and network configuration.
+          I have successfully completed an internship where I designed and maintained WordPress websites,
+          configured campus IT infrastructure, and provided technical support. I am passionate about technology,
+          problem-solving, and continuous learning, and I am excited to contribute my skills to meaningful projects
+          in a professional work environment.
         </p>
         <a
           download
-          href="/Guillermo_Darwin.pdf"
+          href="/Darwin Guillermo - Resume.pdf"
           className="self-end bg-gradient-to-r from-[#3e4e6e] to-[#212e41] rounded-xl px-4 py-2 font-semibold text-xl my-2 active:scale-95 duration-200"
         >
           Download My Resume

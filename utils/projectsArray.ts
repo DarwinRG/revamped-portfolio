@@ -1,11 +1,33 @@
 import paciflix from "@/assets/paciflix.png";
 import sunday from "@/assets/sunday.jpg";
-import scs from "@/assets/scs.jpg";
 import tutor from "@/assets/tutor.png";
 import student from "@/assets/student.png";
-import journey from "@/assets/blog.png";
+import wbms from "@/assets/wbms.jpeg";
+import libraryAttendance from "@/assets/library-attendance.jpeg";
+import appointment from "@/assets/appointment.jpeg";
 
 const projects = [
+  {
+    title: "Library Attendance System",
+    tech: "A comprehensive library management system designed to track student attendance and manage library resources efficiently. Features include user authentication, attendance tracking, and resource management.",
+    href: "https://github.com/DarwinRG/Library-Attendance-System",
+    github: "https://github.com/DarwinRG/Library-Attendance-System",
+    image: libraryAttendance.src,
+  },
+  {
+    title: "Appointment System",
+    tech: "A modern appointment scheduling system built with full-stack technologies. Enables users to book, manage, and track appointments with real-time notifications and calendar integration.",
+    href: "https://github.com/DarwinRG/Appointment-System",
+    github: "https://github.com/DarwinRG/Appointment-System",
+    image: appointment.src,
+  },
+  {
+    title: "Web-based Monitoring System for Maritime Students",
+    tech: "A specialized monitoring system designed for maritime students to track their academic progress, attendance, and performance. Features real-time data visualization and comprehensive reporting.",
+    href: "https://github.com/DarwinRG/Maritime-Monitoring-System",
+    github: "https://github.com/DarwinRG/Maritime-Monitoring-System",
+    image: wbms.src,
+  },
   {
     title: "Paciflix Web Streaming App",
     tech: "Paciflix is a streaming site that offers a wide variety of movies and TV shows. Enjoy seamless streaming with our user-friendly interface and high-quality content.",
@@ -21,33 +43,12 @@ const projects = [
     image: sunday.src,
   },
   {
-    title: "School Cafeteria Simulation",
-    tech: "Simulates the operations of a school cafeteria using the SimPy library. It models the behavior of students arriving at the cafeteria, waiting in line, and being served by cashiers and servers.",
-    href: "https://github.com/DarwinRG/School-Cafeteria-Simulation",
-    github: "https://github.com/DarwinRG/School-Cafeteria-Simulation",
-    image: scs.src,
-  },
-  {
-    title: "Tutor Appointment System",
-    tech: "Laravel-based tutor appointment system. It includes various features such as user authentication, appointment scheduling, and management of tutors and subjects.",
-    href: "https://github.com/DarwinRG/tutor-appointment-system",
-    github: "https://github.com/DarwinRG/tutor-appointment-system",
-    image: tutor.src,
-  },
-  {
     title: "Student Lists App",
     tech: "Student Lists is an Android application designed to manage and organize student information efficiently. It allows users to add, and delete student details. With portrait and landscape layouts, and light/dark color themes.",
     href: "https://github.com/DarwinRG/StudentLists/releases/tag/v1.7",
     github: "https://github.com/DarwinRG/StudentLists",
     image: student.src,
   },
-    {
-        title: "My Academic Journey",
-        tech: "A simple website showing photos from my academic journey.",
-        href: "https://student.darwinrg.tech/",
-        github: "https://github.com/DarwinRG/academic-student-journey",
-        image: journey.src,
-    },
 ];
 
 export { projects };

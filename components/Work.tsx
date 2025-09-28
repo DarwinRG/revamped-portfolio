@@ -15,13 +15,13 @@ type WorkProps = {
 
 const workArray: WorkProps[] = [
   {
-    from: "JANUARY 2024",
-    to: "APRIL 2024",
-    company: "Panpacific University",
+    from: "JUNE 2025",
+    to: "SEPTEMBER 2025",
+    company: "Panpacific University - KINS",
     title: "Intern",
     description: [
-      "Assisted the KINS Department of Panpacific University in technical tasks.",
-      "Gained hands-on experience in technical tasks and document handling.",
+      "Designed and maintained the university's WordPress website and internal systems, while assisting with student ID production, documentation, and event support to ensure smooth departmental operations.",
+      "Configured campus IT infrastructure including WiFi, routers, and VLANs, and provided administrative support such as equipment maintenance and coordinating with staff on daily tasks.",
     ],
     location: "Urdaneta City, Pangasinan",
   },
@@ -49,10 +49,10 @@ function Work() {
           <div className="lg:basis-[50%] lg:flex" key={item.company}>
             <MovingBorderContainer
               duration={5000}
-              className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]"
-              containerClassName="w-full"
+              className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] h-full"
+              containerClassName="w-full h-full"
             >
-              <div className="w-full rounded-3xl p-4 text-gray-50 flex flex-col gap-3">
+              <div className="w-full rounded-3xl p-4 text-gray-50 flex flex-col gap-3 h-full">
                 <div className="flex justify-between items-center">
                   <div>
                     <Image
@@ -76,12 +76,12 @@ function Work() {
                 </div>
                 <h1 className="text-2xl font-semibold">{item.company}</h1>
                 <h1 className="text-lg">{item.title}</h1>
-                <ul className="list-disc pl-5">
+                <ul className="list-disc pl-5 flex-grow">
                   {item.description.map((desc, index) => (
-                    <li key={index}>{desc}</li>
+                    <li key={index} className="mb-2">{desc}</li>
                   ))}
                 </ul>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 mt-auto">
                   <Image src={map.src} alt="address" width={24} height={24} />
                   <h2 className="text-lg">{item.location}</h2>
                 </div>

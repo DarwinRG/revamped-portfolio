@@ -17,19 +17,19 @@ type EducationProps = {
 
 const educationArray: EducationProps[] = [
   {
-    year: "2022 - Present",
-    degree: "Bachelor of Science",
+    year: "2022 - October 2025",
+    degree: "Bachelor of Science in Information Technology",
     institute: "Panpacific University",
-    type: "Undergraduate",
-    subject: "Information Technology",
+    type: "Cum Laude, Undergraduate",
+    subject: "Graduated Cum Laude with focus on programming, web development, and IT infrastructure",
     address: "Urdaneta City, Pangasinan",
   },
   {
-    year: "2020 - 2022",
+    year: "2020 - May 2022",
     degree: "Computer System Servicing",
     institute: "Wellcare Institute of Science and Technology",
     type: "Senior High School",
-    subject: "ICT Strand",
+    subject: "Gained essential skills in IT support, hardware and software maintenance, and troubleshooting",
     address: "Urdaneta City, Pangasinan",
   },
 ];
@@ -42,13 +42,13 @@ function Education() {
       </h2>
       <div className="flex flex-col gap-6 lg:flex-row">
         {educationArray.map((item) => (
-          <div className="lg:flex-1 lg:flex">
+          <div className="lg:flex-1 lg:flex" key={item.institute}>
             <MovingBorderContainer
               duration={5000}
-              className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]"
-              containerClassName="w-full"
+              className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] h-full"
+              containerClassName="w-full h-full"
             >
-              <div className="w-full rounded-3xl p-4 text-gray-50 flex flex-col gap-3">
+              <div className="w-full rounded-3xl p-4 text-gray-50 flex flex-col gap-3 h-full">
                 <div className="w-full flex justify-between items-center">
                   <div>
                     <Image
@@ -70,8 +70,8 @@ function Education() {
                     <p>{item.type}</p>
                   </div>
                 </div>
-                <h1 className="text-2xl font-semibold">{item.degree}</h1>
-                <h1 className="text-lg">{item.subject}</h1>
+                <h1 className="text-2xl font-semibold line-clamp-2">{item.degree}</h1>
+                <h1 className="text-lg line-clamp-3 flex-grow">{item.subject}</h1>
                 <div className="flex items-center gap-3">
                   <Image
                     src={building.src}
@@ -81,7 +81,7 @@ function Education() {
                   />
                   <h2 className="text-lg">{item.institute}</h2>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 mt-auto">
                   <Image src={map.src} alt="address" width={24} height={24} />
                   <h2 className="text-lg">{item.address}</h2>
                 </div>

@@ -13,21 +13,23 @@ export default function ProjectsPage() {
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:w-[80%] lg:mx-auto lg:max-w-[1000px]">
         {projects.map((item, i) => (
           <MovingBorderContainer
+            key={i}
             duration={5000}
-            className="w-full flex flex-col gap-4 bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:flex-row lg:p-8"
+            className="w-full h-full flex flex-col gap-4 bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:flex-row lg:p-8"
+            containerClassName="h-full w-full"
           >
-            <CardContainer key={i} className={`inter-var md:w-[90%]`}>
-              <CardBody className="relative group/card rounded-3xl p-6 h-auto">
+            <CardContainer className={`inter-var md:w-[90%] w-full h-full`}>
+              <CardBody className="relative group/card rounded-3xl p-6 h-full flex flex-col">
                 <CardItem
                   translateZ="50"
-                  className="text-2xl font-bold text-white"
+                  className="text-2xl font-bold text-cyan-300"
                 >
                   {item.title}
                 </CardItem>
                 <CardItem
                   as="p"
                   translateZ="60"
-                  className="text-white text-base mt-2"
+                  className="text-white text-base mt-2 line-clamp-3"
                 >
                   {item.tech}
                 </CardItem>
@@ -43,7 +45,7 @@ export default function ProjectsPage() {
                     alt="thumbnail"
                   />
                 </CardItem>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex justify-between items-center mt-auto pt-2">
                   <CardItem
                     translateZ={20}
                     as="a"
