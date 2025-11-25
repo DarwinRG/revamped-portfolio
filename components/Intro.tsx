@@ -7,15 +7,15 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const words = [
   {
-    text: "A ",
+    text: "AN ",
     className: "text-2xl text-cyan-200 md:text-3xl lg:text-4xl",
   },
   {
-    text: "WEB ",
+    text: "IT ",
     className: "text-2xl text-cyan-200 md:text-3xl lg:text-4xl",
   },
   {
-    text: "DEVELOPER",
+    text: "PROFESSIONAL",
     className: "text-cyan-200 text-2xl md:text-3xl lg:text-4xl",
   },
 ];
